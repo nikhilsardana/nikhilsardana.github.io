@@ -1,0 +1,80 @@
+body {
+    box-sizing: border-box;
+    font-family: "Libre Baskerville", Georgia, Times, "Times New Roman", serif;
+    font-weight: 400;
+    background: #fffff8;
+    color: #333;
+    margin: 1em 0 1em 0;
+    line-height: 1.8 !important;
+    font-size: 100%;
+    display: block;
+    vertical-align: baseline;
+}
+a {
+  color: #C1292E;
+  text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+table {
+    max-width: 600px;
+    margin-left:auto;
+    margin-right:auto;
+}
+h1 {
+    font-size: 2.5em;
+    color: #2A5298;
+    text-align: center;
+    margin: auto;
+    margin-top: 1.75em;
+    margin-bottom: 1em;
+    max-width: 600px;
+
+}
+h2 {
+    font-size: 1.5em;
+    margin-top: 1.5em;
+    max-width: 600px;
+    text-align: center;
+    margin: auto;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+}
+h3 {
+    font-size: 1.2em;
+    margin-top: 1.3em;
+    max-width: 600px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 0.5em;
+}
+h4,h5,h6 {
+    margin: auto;
+    text-align: center;
+    max-width: 600px;
+}
+p, ol, ul, dl {
+    font-size: 1.05rem;
+    margin-top: 1.3em;
+    margin-bottom: 1.3em;
+    margin: auto auto;
+    text-align: left;
+    max-width: 600px;
+}
+footer{
+    padding: 3rem;
+}
+
+@-ms-viewport {
+  width: device-width;
+}
+
+@media (max-width: 991px) {
+    p,a,h1,h2,h3,h4,h5,h6,ul,dl,ol,li {
+        max-width: 95%;
+    }
+    ul {
+        padding-inline-start: 20px;
+    }
+}
