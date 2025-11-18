@@ -1,55 +1,166 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-US">
     <head>
-        <meta charset="UTF-8">
+        <meta charset="UTF-8" />
         <title>Nikhil Sardana</title>
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-        <meta name="description" content="Nikhil Sardana's personal website"/>
+        <meta name="description" content="Nikhil Sardana's personal website" />
         <meta name="keywords" content="nikhil sardana, nikhil, sardana" />
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="theme-color" content="#fffff8"/>
-        <link rel="stylesheet" href="css/style.css"/>
-        <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#fffff8" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link
+            href="https://fonts.googleapis.com/css?family=Libre+Baskerville"
+            rel="stylesheet"
+        />
     </head>
     <body>
         <h1>Nikhil Sardana</h1>
-        <h2><a href="https://scholar.google.com/citations?user=dxEanUQAAAAJ">papers</a> | <a href="mailto:nsardana@cs.stanford.edu">contact</a></h2>
-        <p style="margin-top: 1.3rem">I am a machine learning researcher interested in LLM pre-training and reinforcement learning post-training. My prior work includes research on scaling laws, model achitecture, and training and inference efficiency. Some of my publications are listed below; others can be viewed on my <a href="https://scholar.google.com/citations?user=dxEanUQAAAAJ">Scholar page</a>.</p>
-        <h2>Machine Learning Research</h2>
+        <h2>
+            <a href="https://scholar.google.com/citations?user=dxEanUQAAAAJ"
+                >papers</a
+            >
+            | <a href="mailto:nsardana@cs.stanford.edu">contact</a>
+        </h2>
+        <p>
+            I am a machine learning researcher interested in LLM pre-training
+            and reinforcement learning post-training. My prior work includes
+            research on LLM scaling laws, model achitecture, and training and
+            inference efficiency. Before that, I conducted reinforcement
+            learning research at
+            <a href="https://irislab.stanford.edu/">Stanford</a>. Some of my
+            publications are listed below; others can be viewed on my
+            <a href="https://scholar.google.com/citations?user=dxEanUQAAAAJ"
+                >Scholar page</a
+            >.
+        </p>
+        <p>
+            My primary research goal is to develop more capable and useful large
+            language models. I am interested in questions along a few different
+            lines:
+        </p>
+        <ul>
+            <li>
+                How can we develop more accurate scaling laws with tighter
+                confidence bounds while using fewer resources?
+            </li>
+            <li>
+                How can we provide richer and more granular reward signals for
+                language models?
+            </li>
+            <li>
+                How do we use feedback to improve language models when they
+                exceed our capability to efficiently verify outputs? Can we use
+                <i>self-play</i> to improve language models beyond this point,
+                as we have done for games like Go and Chess? How do we apply
+                these techniques effectively outside of well-defined
+                environments?
+            </li>
+            <li>
+                What are the fundamental limitations of autoregressive models?
+            </li>
+            <li>
+                How can we leverage language models for scientific advancement?
+            </li>
+        </ul>
+        <h2>Selected Research</h2>
         <ul>
             <li>Natural Language Processing</li>
             <ul>
                 <li>Accounting for Inference in LLM Scaling Laws</li>
                 <ul>
-                    <li>Modifying the Chinchilla scaling laws to find the optimal model size and training duration, adjusting for total (training + inference) costs over the model lifetime.</li>
-                    <li>Read the <a href="https://arxiv.org/abs/2401.00448">paper</a> (ICML 2024) or view the <a href="https://github.com/nikhilsardana/beyond-chinchilla">code</a>. An earlier version appeared at the NeurIPS 2023 Workshop on Efficient Natural Language and Speech Processing.</li>
+                    <li>
+                        Modifying the Chinchilla scaling laws to find the
+                        optimal model size and training duration, adjusting for
+                        total (training + inference) costs over the model
+                        lifetime.
+                    </li>
+                    <li>
+                        Read the
+                        <a href="https://arxiv.org/abs/2401.00448">paper</a>
+                        (ICML 2024) or view the
+                        <a
+                            href="https://github.com/nikhilsardana/beyond-chinchilla"
+                            >code</a
+                        >. An earlier version appeared at the NeurIPS 2023
+                        Workshop on Efficient Natural Language and Speech
+                        Processing.
+                    </li>
                 </ul>
                 <li>Upcycling</li>
                 <ul>
-                    <li>Sparse Upcycling is the conversion of a dense LLM to a Mixture-of-Experts model. We find that the model quality improvements from upcycling are largely outweighed by the significant inference costs.</li>
-                    <li>Read the <a href="https://arxiv.org/abs/2411.08968v1">paper</a> (presented at the NeurIPS 2024 <a href='https://neurips2024-enlsp.github.io/'>Workshop</a> on Efficient Natural Language and Speech Processing).</li>
+                    <li>
+                        Sparse Upcycling is the conversion of a dense LLM to a
+                        Mixture-of-Experts model. We find that the model quality
+                        improvements from upcycling are largely outweighed by
+                        the significant inference costs.
+                    </li>
+                    <li>
+                        Read the
+                        <a href="https://arxiv.org/abs/2411.08968v1">paper</a>
+                        (presented at the NeurIPS 2024
+                        <a href="https://neurips2024-enlsp.github.io/"
+                            >Workshop</a
+                        >
+                        on Efficient Natural Language and Speech Processing).
+                    </li>
                 </ul>
                 <li>Optimizing BERT pretraining</li>
-                 <ul>
-                    <li>Developing and synthesizing a collection of architecture and training optimizations to reduce the cost of training BERT models to $20. Conducted ablation study to determine the contributions and interactions of individual methods.</li>
-                    <li>Read the <a href="https://arxiv.org/abs/2312.17482">paper</a> (NeurIPS 2023).</li>
+                <ul>
+                    <li>
+                        Developing and synthesizing a collection of architecture
+                        and training optimizations to reduce the cost of
+                        training BERT models to $20. Conducted ablation study to
+                        determine the contributions and interactions of
+                        individual methods.
+                    </li>
+                    <li>
+                        Read the
+                        <a href="https://arxiv.org/abs/2312.17482">paper</a>
+                        (NeurIPS 2023).
+                    </li>
                 </ul>
             </ul>
             <li>Reinforcement Learning</li>
             <ul>
-                <li>Autonomous Reinforcement Learning: Formalism and Benchmarking</li>
+                <li>
+                    Autonomous Reinforcement Learning: Formalism and
+                    Benchmarking
+                </li>
                 <ul>
-                    <li>Formalizing the problem statement and creating a benchmark suite of environments for autonomous reinforcement learning, a setting where agents must learn without human interventions.</li>
-                    <li>Read the <a href="https://arxiv.org/abs/2112.09605">paper</a> (ICLR 2022) or view the <a href="https://architsharma97.github.io/earl_benchmark/">website</a>.</li>
+                    <li>
+                        Formalizing the problem statement and creating a
+                        benchmark suite of environments for autonomous
+                        reinforcement learning, a setting where agents must
+                        learn without human interventions.
+                    </li>
+                    <li>
+                        Read the
+                        <a href="https://arxiv.org/abs/2112.09605">paper</a>
+                        (ICLR 2022) or view the
+                        <a
+                            href="https://architsharma97.github.io/earl_benchmark/"
+                            >website</a
+                        >.
+                    </li>
                 </ul>
             </ul>
             <li>Meta-Learning</li>
             <ul>
                 <li>Bayesian Meta-Learning with Gaussian Processes</li>
-                <ul>       
-                    <li>Developed a Gaussian process + deep network model to produce better, more expressive uncertainty estimates on few-shot regression tasks.</li>
+                <ul>
+                    <li>
+                        Developed a Gaussian process + deep network model to
+                        produce better, more expressive uncertainty estimates on
+                        few-shot regression tasks.
+                    </li>
                     <li>Final project for CS 330.</li>
-                    <li>Read the <a href="https://arxiv.org/abs/2110.11044">paper</a> or view the <a href="https://github.com/vivekmyers/vmgp">code</a>.</li>
+                    <li>
+                        Read the
+                        <a href="https://arxiv.org/abs/2110.11044">paper</a> or
+                        view the
+                        <a href="https://github.com/vivekmyers/vmgp">code</a>.
+                    </li>
                 </ul>
             </ul>
         </ul>
@@ -58,69 +169,100 @@
         <ul>
             <li>Machine Learning</li>
             <ul>
-                <!--<li>CS 224n: Natural Language Processing<br>
-                     &emsp;&ensp;&nbsp;234: Reinforcement Learning<br>
-                     &emsp;&ensp;&nbsp;330: Multi-Task and Meta Learning<br>
-                     &emsp;&ensp;&nbsp;236: Deep Generative Models
-                 </li>-->
-                 <li>CS 224n: Natural Language Processing</li>
-                 <li>CS 234: Reinforcement Learning</li>
-                 <li>CS 330: Multi-Task and Meta Learning</li>
-                 <li>CS 236: Deep Generative Models</li>
-                 <li>CS 228: Probabilistic Graphical Models</li>
+                <li>CS 224n: Natural Language Processing</li>
+                <li>CS 234: Reinforcement Learning</li>
+                <li>CS 330: Multi-Task and Meta Learning</li>
+                <li>CS 236: Deep Generative Models</li>
+                <li>CS 228: Probabilistic Graphical Models</li>
             </ul>
             <li>Computer Science Theory</li>
-                <ul>
-                    <li>CS 154: Automata and Complexity Theory</li>
-                    <li>CS 161, 168, 261: Algorithms</li>
-                    <li>CS 259Q: Quantum Computing</li>
-                    <li>CS 255, 355: Cryptography</li>
-                </ul>
+            <ul>
+                <li>CS 154: Automata and Complexity Theory</li>
+                <li>CS 161, 168, 261: Algorithms</li>
+                <li>CS 259Q: Quantum Computing</li>
+                <li>CS 255, 355: Cryptography</li>
+            </ul>
             <li>Computer Systems</li>
-                <ul>
-                  <li>CS 149: Parallel Computing</li>
-                  <li>CS 143: Compilers</li>
-                </ul>
+            <ul>
+                <li>CS 149: Parallel Computing</li>
+                <li>CS 143: Compilers</li>
+            </ul>
             <li>Analysis</li>
-                <ul>
-                    <li>Math 116: Complex Analysis</li>
-                    <li>Math 155: Analytic Number Theory</li>
-                    <li>Math 61CM: Real Analysis & Linear Algebra</li>
-                </ul>
+            <ul>
+                <li>Math 116: Complex Analysis</li>
+                <li>Math 155: Analytic Number Theory</li>
+                <li>Math 61CM: Real Analysis & Linear Algebra</li>
+            </ul>
             <li>Algebra</li>
-                <ul>
-                    <li>Math 120: Group Theory</li>
-                    <li>Math 121: Galois Theory</li>
-                </ul>
+            <ul>
+                <li>Math 120: Group Theory</li>
+                <li>Math 121: Galois Theory</li>
+            </ul>
         </ul>
         <h2>Projects</h2>
         <ul>
-            <li>Volunteer work: Taught computer science after-school at Palo Alto High School (2019-2020). Read the <a href="lectures/">lectures</a>.</li>
+            <li>
+                Volunteer work: Taught computer science after-school at Palo
+                Alto High School (2019-2020). Read the
+                <a href="lectures/">lectures</a>.
+            </li>
             <li>Dynamic Optimality and Tango Trees</li>
             <ul>
-                <li>Exploring the field of dynamic optimality, analyzing the tango tree, and running a few experiments.</li>
+                <li>
+                    Exploring the field of dynamic optimality, analyzing the
+                    tango tree, and running a few experiments.
+                </li>
                 <li>Final project for CS 166 (Data Structures).</li>
-                <li>Read the <a href="tango.pdf">paper</a>.
+                <li>Read the <a href="tango.pdf">paper</a>.</li>
             </ul>
             <li>MIT Battlecode</li>
             <ul>
-                <li>Monthlong AI strategy game/<a href="https://battlecode.org/">programming competition</a> run by MIT students, open to students worldwide.</li>
+                <li>
+                    Monthlong AI strategy game/<a href="https://battlecode.org/"
+                        >programming competition</a
+                    >
+                    run by MIT students, open to students worldwide.
+                </li>
                 <li>Team smite, 2020: 2nd place</li>
                 <li>Team smite, 2019: 1st place</li>
                 <li>Team smite, 2018: T-9th place</li>
                 <li>Team Segfault, 2017: 5th, HS tournament</li>
-                <li><a href="https://github.com/mvpatel2000/battlecode2020">2020 Code</a> | <a href="https://github.com/mvpatel2000/battlecode2019">2019 Code</a> | <a href="smite.pdf">2019 Strategy Report</a> | <a href="https://github.com/mvpatel2000/battlecode-2018-smite">2018 Code</a> | <a href="https://github.com/nthistle/battlecode-2017-segfault">2017 Code</a></li>
+                <li>
+                    <a href="https://github.com/mvpatel2000/battlecode2020"
+                        >2020 Code</a
+                    >
+                    |
+                    <a href="https://github.com/mvpatel2000/battlecode2019"
+                        >2019 Code</a
+                    >
+                    | <a href="smite.pdf">2019 Strategy Report</a> |
+                    <a
+                        href="https://github.com/mvpatel2000/battlecode-2018-smite"
+                        >2018 Code</a
+                    >
+                    |
+                    <a
+                        href="https://github.com/nthistle/battlecode-2017-segfault"
+                        >2017 Code</a
+                    >
+                </li>
             </ul>
         </ul>
         <h2>Ancient History</h2>
         <ul>
-          <li>Read <i><a href="guide.pdf">A Guide to the Sciences at TJHSST</a></i>, a small book written by me and a few friends on the science opportunities available to high-school students at TJ.</li>
-          <li>Co-founded the <a href="http://tjmachinelearning.com">TJHSST Machine Learning Club</a>.</li>
+            <li>
+                Read
+                <i><a href="guide.pdf">A Guide to the Sciences at TJHSST</a></i
+                >, a small book written by me and a few friends on the science
+                opportunities available to high-school students at TJ.
+            </li>
+            <li>
+                Co-founded the
+                <a href="http://tjmachinelearning.com"
+                    >TJHSST Machine Learning Club</a
+                >.
+            </li>
         </ul>
         <footer></footer>
     </body>
 </html>
-
-
-
-
